@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>New Tab</title>
+  <style>
+    #content {
+      opacity: 0;
+      min-height: 100vh;
+    }
+
+    /* Smooth fade with slight zoom */
+    .animate-fade-zoom {
+      animation: fadeZoomIn 0.7s ease forwards;
+    }
+
+    @keyframes fadeZoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.98);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* Fade up */
+    .animate-fade-up {
+      animation: fadeUpIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    @keyframes fadeUpIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Elegant fade */
+    .animate-elegant {
+      animation: elegantFade 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    }
+
+    @keyframes elegantFade {
+      0% {
+        opacity: 0;
+        filter: blur(10px);
+      }
+      100% {
+        opacity: 1;
+        filter: blur(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="content"></div>
+  <script src="newtab.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "zz New Tab",
+  "version": "1.0",
+  "description": "Customize your new tab page with custom HTML",
+  "author": "ZsuryK",
+  
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{b9e2eee1-d04d-4882-9cca-a71a33a9ffd0}"
+    }
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true,
+    "chrome_style": false
+  },
+
+  "chrome_url_overrides": {
+    "newtab": "newtab/newtab.html"
+  }
+}
